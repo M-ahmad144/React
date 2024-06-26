@@ -1,0 +1,32 @@
+/* Custom CSS for product cards */
+.product-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product-card .card-body {
+  padding: 1.25rem;
+}
+
+.product-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-card .card-text {
+  color: #6c757d;
+}
+
+.product-card .btn-primary {
+  background-color: #1766c0da;
+  border-color: #007bff;
+}
+
+.product-card .btn-primary:hover {
+  background-color: #3a2015;
+  border-color: #0056b3;
+}

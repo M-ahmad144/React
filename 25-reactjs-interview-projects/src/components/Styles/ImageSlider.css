@@ -1,0 +1,50 @@
+.slider-container {
+  position: relative;
+  background-color: #000;
+  border: 2px solid #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.current-slide {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.current-slide:hover {
+  transform: scale(1.05);
+}
+
+.arrow-icon {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.arrow-icon:hover {
+  color: #f0c040;
+}
+
+.indicator-button {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator-button.active {
+  background-color: #f0c040;
+}
+
+.indicator-button:hover {
+  background-color: #fff;
+}

@@ -25,11 +25,19 @@ function StarRating({ noOfStars = 5 }) {
     return (
         <div className='d-flex justify-content-center align-items-center my-5'>
             {[...Array(noOfStars)].map((_, index) => {
-                const starRating = index + 1;//star rating from 1
+                const starRating = index + 1;
                 return (
                     <FaStar
                         key={index}
-                        className={index < (hover || rating) ? 'active' : 'inActive'}
+
+                        // Check if the index of the star is less than the hover or rating
+                        // If true, apply the 'active' class to all stars with an index less than the hover or rating value; otherwise, apply the 'inactive' class
+
+                        //map function ensures that the logic is applied to all stars in the list, updating their classes dynamically based on the hover or rating condition for each star's index.
+
+                        className={index < (hover || rating) ? 'active' : 'inactive'}
+
+
                         size={100}
                         style={{ fontSize: "48px", cursor: "pointer" }}
                         onClick={() => handleClick(starRating)}
