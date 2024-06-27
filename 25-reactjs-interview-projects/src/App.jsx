@@ -10,7 +10,8 @@ import menus from "./components/menu-tree-view/data";
 import QrCode from "./components/QR-code-generator/QrCode";
 import ThemeChange from "./components/ChangeThemeUsingLocalHook/ThemeChange";
 
-
+import ScrollIndicator from "./components/scroll-indicator/ScrollIndicators";
+import ParentCustomTabs from "./components/custom-tabs/ParentCustomTabs";
 
 function App() {
   const noOfStars = 5;
@@ -24,7 +25,9 @@ function App() {
         {/* <LoadData limit={20} /> */}
         {/* <TreeView menus={menus} /> */}
         {/* <QrCode /> */}
-        <ThemeChange />
+        {/* <ThemeChange /> */}
+        {/* <ScrollIndicator /> */}
+        <ParentCustomTabs />
 
 
 

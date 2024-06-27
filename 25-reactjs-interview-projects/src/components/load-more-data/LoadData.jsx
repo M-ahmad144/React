@@ -24,7 +24,7 @@ export default function LoadData({ limit }) {
       .then(res => res.json())
       .then(data => {
         if (data && data.products && data.products.length > 0) {
-          setProducts(prev => [...prev, ...data.products]);
+          setProducts([...products, ...data.products])
         } else {
           setProducts([]);
         }
