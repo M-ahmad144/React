@@ -1,4 +1,3 @@
-// src/Store/index.js
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 const initialState = { count: 0 };
