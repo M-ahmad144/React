@@ -8,6 +8,8 @@ import LoadData from "./components/load-more-data/LoadData";
 import TreeView from "./components/menu-tree-view/TreeView";
 import menus from "./components/menu-tree-view/data";
 import QrCode from "./components/QR-code-generator/QrCode";
+import ThemeChange from "./components/ChangeThemeUsingLocalHook/ThemeChange";
+
 
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
         {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} page={2} /> */}
         {/* <LoadData limit={20} /> */}
         {/* <TreeView menus={menus} /> */}
-        <QrCode />
+        {/* <QrCode /> */}
+        <ThemeChange />
+
 
 
       </div>
