@@ -9,9 +9,9 @@ import TreeView from "./components/menu-tree-view/TreeView";
 import menus from "./components/menu-tree-view/data";
 import QrCode from "./components/QR-code-generator/QrCode";
 import ThemeChange from "./components/ChangeThemeUsingLocalHook/ThemeChange";
-
 import ScrollIndicator from "./components/scroll-indicator/ScrollIndicators";
 import ParentCustomTabs from "./components/custom-tabs/ParentCustomTabs";
+import GitHubProfileFinder from "./components/github-profile-finder/GitHubProfileFinder";
 
 function App() {
   const noOfStars = 5;
@@ -28,7 +28,7 @@ function App() {
         {/* <ThemeChange /> */}
         {/* <ScrollIndicator /> */}
         {/* <ParentCustomTabs /> */}
-
+        <GitHubProfileFinder />
 
 
       </div>
