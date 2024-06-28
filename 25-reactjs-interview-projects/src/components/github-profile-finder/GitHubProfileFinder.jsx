@@ -8,7 +8,7 @@ export default function GitHubProfileFinder() {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents the default form submission behavior
-        fetchGithubUserData();
+        fetchGithubUserData()
         setUserName('');
     };
 
