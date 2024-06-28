@@ -13,6 +13,7 @@ function Slider({ url, limit, page }) {
             setLoading(true);
             const response = await fetch(`${getUrl}?page=${page}&limit=${limit}`);
             const data = await response.json();
+
             setImages(data);
         } catch (e) {
             setError(e.message);

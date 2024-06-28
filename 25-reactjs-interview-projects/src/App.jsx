@@ -27,7 +27,7 @@ function App() {
         {/* <QrCode /> */}
         {/* <ThemeChange /> */}
         {/* <ScrollIndicator /> */}
-        <ParentCustomTabs />
+        {/* <ParentCustomTabs /> */}
 
 
 

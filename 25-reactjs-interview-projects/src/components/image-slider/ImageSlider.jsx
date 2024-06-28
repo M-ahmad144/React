@@ -6,7 +6,7 @@ import '../Styles/ImageSlider.css';
 export default function ImageSlider({ url, limit, page }) {
 
     const [images, setImages] = useState([]);
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(4);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -18,6 +18,7 @@ export default function ImageSlider({ url, limit, page }) {
             if (data) {
                 setImages(data);
                 setLoading(false);
+                console.log(data);
             }
 
         } catch (e) {
