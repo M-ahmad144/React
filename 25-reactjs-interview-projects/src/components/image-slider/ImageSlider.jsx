@@ -6,7 +6,7 @@ import '../Styles/ImageSlider.css';
 export default function ImageSlider({ url, limit, page }) {
 
     const [images, setImages] = useState([]);
-    const [currentSlide, setCurrentSlide] = useState(4);
+    const [currentSlide, setCurrentSlide] = useState(0);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 

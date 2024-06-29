@@ -13,6 +13,7 @@ import ScrollIndicator from "./components/scroll-indicator/ScrollIndicators";
 import ParentCustomTabs from "./components/custom-tabs/ParentCustomTabs";
 import GitHubProfileFinder from "./components/github-profile-finder/GitHubProfileFinder";
 import SearchAutoComplete from "./components/search-auto-complete/SearchAutoComplete";
+import TicTacToe from "./components/tic-toc-toe/TicTacToe";
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
         {/* <ScrollIndicator /> */}
         {/* <ParentCustomTabs /> */}
         {/* <GitHubProfileFinder /> */}
-        <SearchAutoComplete />
+        {/* <SearchAutoComplete /> */}
+        <TicTacToe />
 
 
 
