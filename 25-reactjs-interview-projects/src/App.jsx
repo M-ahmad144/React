@@ -16,6 +16,7 @@ import SearchAutoComplete from "./components/search-auto-complete/SearchAutoComp
 import TicTacToe from "./components/tic-toc-toe/TicTacToe";
 
 
+
 function App() {
   const noOfStars = 5;
   return (
@@ -33,7 +34,8 @@ function App() {
         {/* <ParentCustomTabs /> */}
         {/* <GitHubProfileFinder /> */}
         {/* <SearchAutoComplete /> */}
-        <TicTacToe />
+        {/* <TicTacToe /> */}
+
 
 
 
