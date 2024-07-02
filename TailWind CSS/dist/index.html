@@ -3,12 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web page - using Tailwind</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="bg-slate-900">
-    <div class="bg-slate-950">
-      <h1 class="text-cyan-100">helooo</h1>
-    </div>
+  <body class="bg-slate-950">
+    <!-- navbar goes here -->
+    <nav
+      class="w-full h-16 bg-indigo-300 justify-between flex md:px-4 items-center"
+    >
+      <div class="text-indigo-700 font-bold text-2xl p-3 drop-shadow-lg">
+        Ahmad
+      </div>
+      <ul class="md:flex hidden space-x-9 p-4">
+        <li class="text-indigo-700 cursor-pointer">Home</li>
+        <li class="text-indigo-700 cursor-pointer">About</li>
+        <li class="text-indigo-700 cursor-pointer">Services</li>
+      </ul>
+      <div
+        class="hidden md:block rounded-lg text-slate-950 font-bold cursor-pointer bg-blue-700 m-2 p-3 hover:bg-white"
+      >
+        login/signUp
+      </div>
+      <div class="md:hidden">
+        <a class="text-5xl cursor-pointer" href="#">&#8801;</a>
+      </div>
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- hero section goes here -->
+    <header
+      class="h-screen w-full flex flex-col-reverse md:flex-row items-center"
+    >
+      <div
+        class="h-full w-full md:w-1/2 bg-white rounded-lg shadow-2xl m-4 p-6 flex flex-col justify-center"
+      >
+        <h1 class="text-3xl font-bold text-indigo-700">Responsive Design</h1>
+        <p class="mt-4 text-lg text-gray-700">
+          This is a sample text that appears on the left side on desktop and
+          below the image on mobile. The layout adjusts beautifully to fit
+          different screen sizes.
+        </p>
+      </div>
+      <img
+        class="h-full w-full md:w-1/2 object-cover rounded-lg shadow-lg"
+        src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/2013/05/textimage16.jpg"
+        alt="Image"
+      />
+    </header>
+
+    <!-- hero section end here -->
+
+    <!-- Student starts here Section -->
+    <div class="h-auto w-full flex flex-col items-center mt-12">
+      <div class="w-full flex flex-col items-center">
+        <p
+          class="text-center text-indigo-500 font-bold font-serif text-3xl md:text-4xl"
+        >
+          Pure Hard Work, No Shortcuts!
+        </p>
+        <div class="w-36 h-1 bg-amber-400 rounded-2xl mt-4 mb-12"></div>
+      </div>
+                  <!-- Cards Section -->
+                  <div class="flex items-center justify-center mt-12 space-x-8">
+                    <!-- Card 1 -->
+                    <div class="bg-yellow-200 p-6 rounded-lg shadow-lg max-w-md">
+                      <img class="w-24 h-24 mb-4" src="/src/elearning.png" alt="E-learning" />
+                      <div class="text-center">
+                        <p class="text-2xl font-bold">600+</p>
+                        <p class="text-lg">Different Courses</p>
+                      </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-yellow-200 p-6 rounded-lg shadow-lg max-w-md">
+                      <img class="w-24 h-24 mb-4" src="/src/online-course.png" alt="Online Courses" />
+                      <div class="text-center">
+                        <p class="text-2xl font-bold">400+</p>
+                        <p class="text-lg">Online Courses</p>
+                      </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-yellow-200 p-6 rounded-lg shadow-lg max-w-md items-center">
+                      <img class=" w-24 h-24 mb-4" src="/src/online-learning.png" alt="Online Learning" />
+                      <div class="text-center">
+                        <p class="text-2xl font-bold">800+</p>
+                        <p class="text-lg">Online Resources</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Cards Section End -->
+
+
+
+
+          <!--  products section -->
+          <div class="w-full flex flex-col items-center mt-16">
+            <p
+              class="text-center text-indigo-500 font-bold font-serif text-3xl md:text-4xl"
+            >
+              Others products
+            </p>
+            <div class="w-36 h-1 bg-amber-400 rounded-2xl mt-4 mb-12"></div>
+          </div>
   </body>
 </html>
